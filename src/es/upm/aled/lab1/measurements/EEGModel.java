@@ -98,7 +98,7 @@ public class EEGModel {
 	/**
 	 * Fills the measurements from the contents of an OpenBCI file, a CSV file in
 	 * which each line represents a measurement. The first column is an index modulo
-	 * 256, and the remaining columns are the values of the samples obtanined by
+	 * 256, and the remaining columns are the values of the samples obtained by
 	 * each of the channels. All lines must have the same number of columns. "%" at
 	 * the beginning of a line indicates a comment.
 	 * 
