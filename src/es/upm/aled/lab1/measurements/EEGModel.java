@@ -282,12 +282,11 @@ public class EEGModel {
 			// SOLUCION
 		} else {
 			EEGModel eeg = new EEGModel();
-			eeg.createSyntheticData(9600);
-			eeg.plotData();
+			eeg.createSyntheticData(1000);
 			// SOLUCION
 			try {
 				eeg.saveFile("SyntheticData.txt");
-				EEGModel eegFromFile = new EEGModel("SyntheticData");
+				EEGModel eegFromFile = new EEGModel("SyntheticData.txt");
 				eegFromFile.plotData();
 			} catch (IOException e) {
 				System.out.println("Error writing to file. Do you have access and does the folder exist?");
